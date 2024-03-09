@@ -2,6 +2,7 @@
 
 #--------------------------------------------------------------
 #Version 1: mafft with standard parameters
+#Version 2: nombre de output con fasta
 #--------------------------------------------------------------
 
 
@@ -27,7 +28,7 @@ for archivo in "$carpeta"/*; do
     if [[ -f "$archivo" ]]; then
         # Ejecuta el alineamiento con MAFFT (ajusta los parámetros según tus necesidades)
         # Se ejecutará sin parámetros, pero puede que sirva el método L-INS-i por la cantidad de secuencias
-        mafft "$archivo" > "${archivo}.out"
+        mafft "$archivo" > "${archivo}.fa"
         alineados=$((alineados + 1))
         archivos_faltantes=$((total_archivos - alineados))
         echo "Alineado: $alineados / Total: $total_archivos / Faltantes: $archivos_faltantes"
