@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#--------------------------------------------------------------
+#Version 1: mafft with standard parameters
+#--------------------------------------------------------------
+
+
 # Ruta de la carpeta con los archivos
 carpeta="/ruta/a/tu/carpeta"
 
