@@ -6,10 +6,15 @@ This is a repository hosting all scripts used during the bartonella virulence pr
 .
 ├── concatenate_genes_bartonella.sh
 ├── mafft_bartonella.sh
+├── paml_script
+│   ├── newick_formatter_for_PAML.py
+│   └── paml_script_v3.sh
+├── process_names.py
 ├── raxml_genes_bartonella.sh
-└── README.md
+├── README.md
+├── replace_names.sh
+└── tanglegram_phylogeny.r
 
-0 directories, 4 files
 ```
 ## Documentation regarding the scripts
 - `mafft_bartonella.sh`: Used to reiterate `mafft` on all extracted virulence genes
